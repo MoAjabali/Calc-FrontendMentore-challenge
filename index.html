@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- rander file css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main file css -->
+    <link rel="stylesheet" href="css/main-master.css">
+    <!-- gogle font  -->
+    <title>Calculator app | Frontend Mentor challenge</title>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <main>
+      <!-- Header continues the title and themes changer -->
+      <div>
+        <h1 class="header-heading-margin">calc</h1>
+        <section>
+          <h3 class="header-heading-margin">theme</h3>
+            <div>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <input type="range" name="theme" aria-valuemin="1" aria-valuemax="3" min="1" max="3" id="">
+        </section>
+      </div>
+
+      <!-- Output -->
+      <div id="output">
+        0
+      </div>
+
+      <Form>
+          <button type="button" aria-label="7" value="7">7</button>
+          <button type="button" aria-label="8" value="8">8</button>
+          <button type="button" aria-label="9" value="9">9</button>
+          <button type="button" aria-label="delete" value="del">del</button>
+          <button type="button" aria-label="4" value="4">4</button>
+          <button type="button" aria-label="5" value="5">5</button>
+          <button type="button" aria-label="6" value="6">6</button>
+          <button type="button" aria-label="sum" value="+" calc-type="Oration">+</button>
+          <button type="button" aria-label="1" value="1">1</button>
+          <button type="button" aria-label="2" value="2">2</button>
+          <button type="button" aria-label="3" value="3">3</button>
+          <button type="button" aria-label="sub" value="-" calc-type="Oration">-</button>
+          <button type="button" aria-label="float" value=".">.</button>
+          <button type="button" aria-label="0" value="0">0</button>
+          <button type="button" aria-label="divination" value="/" calc-type="Oration">/</button>
+          <button type="button" aria-label="multi" value="x" calc-type="Oration">x</button>
+          <button type="button" aria-label="reset" value="reset">reset</button>
+          <button type="button" aria-label="equal" value="=">=</button>
+      </Form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

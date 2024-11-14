@@ -1,0 +1,186 @@
+/* all */
+:root{
+  --main-background: #3b4863 ;
+  --toggle-background: #242c42 ;
+  --screen-background: #171f33 ;
+
+  --key-background-desaturated: #637097 ;
+  --key-shadow-desaturated: #404e72 ;
+
+  --key-toggle-background:  #d03f2f ;
+  --key-shadow-red: hsl(6, 70%, 34%) ;
+
+  --key-background: hsl(30, 25%, 89%) ;
+  --key-shadow-Grayish: #b5a59651;
+
+  --text-dark: #454b59;
+  --text-white: hsl(0, 0%, 100%) ;
+}
+/*:root{
+
+  --main-background: hsl(0, 0%, 90%);
+  --toggle-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+
+  --key-background-desaturated: hsl(185, 42%, 37%);
+  --key-shadow-desaturated:  hsl(185, 58%, 25%);
+
+  --key-toggle-background: hsl(25, 98%, 40%);
+  --key-shadow-red: hsl(25, 99%, 27%);
+
+  --key-background: hsl(45, 7%, 89%);
+  --key-shadow-Grayish:  hsl(35, 11%, 61%);
+
+  --text-dark:  hsl(60, 10%, 19%);
+  --text-white: hsl(0, 0%, 100%);
+}*/
+/*:root{
+  --main-background:  hsl(268, 75%, 9%)
+  --toggle-background: hsl(268, 71%, 12%);
+
+  --key-background: hsl(281, 89%, 26%);
+  --key-shadow:   hsl(285, 91%, 52%);
+
+  --key-toggle-background: hsl(176, 100%, 44%);
+  --key-shadow: hsl(177, 92%, 70%);
+
+  --key-background:  hsl(268, 47%, 21%);
+  --key-shadow:  hsl(290, 70%, 36%);
+
+  --text-light-yellow:  hsl(52, 100%, 62%);
+  --text-dark:   hsl(198, 20%, 13%);
+  --text-white: hsl(0, 0%, 100%);
+}*/
+*{
+  font-family: sans-serif;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: system-ui;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--main-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* finish all */
+
+/* main start */
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: 540px;
+}
+/* main end */
+
+/* start header */
+main > div:first-child{
+  display: flex;
+  align-items: last flex-end;
+  justify-content: space-between;
+  color: var(--text-white);
+}
+.header-heading-margin{
+  margin: 0px;
+}
+h1.header-heading-margin{
+  font-size: 32px;
+  font-weight: bold;
+}
+main > div:first-child > section{
+  display: grid;
+  grid-template: '... no'  'title range';
+  column-gap: 28px;
+  row-gap: 8px;
+  align-items: center;
+}
+main > div:first-child > section > h3{
+  grid-area: title;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main > div:first-child > section > div{
+  grid-area: no;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+main > div:first-child > section > input{
+  grid-area: range;
+  width: 70px;
+  appearance: none;
+  background-color: var(--toggle-background);
+  border-radius: 18px;
+  accent-color: var(--key-toggle-background);
+  padding: 6px;
+}
+/* end header */
+
+/* start out */
+
+main > div:last-of-type{
+  background-color: var(--screen-background);
+  color: var(--text-white);
+  padding: 46px;
+  font-size: 62px;
+  height: 164px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-align: right;
+  overflow: auto;
+}
+main > div:last-of-type::-webkit-scrollbar,main > div:last-of-type::-webkit-scrollbar-button{
+  background-color: var(--screen-background);
+}
+main > div:last-of-type::-webkit-scrollbar-thumb{
+  background-color:var(--key-background-desaturated);
+}
+/* end output */
+
+/* start button */
+main > form{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--toggle-background);
+  padding: 24px;
+  gap: 24px;
+  border-radius: 12px;
+  font-size: 32px;
+}
+main > form > *{
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--text-dark);
+  outline: none;
+  border-style: solid;
+  background-color: var(--key-background);
+  border-width: 0px 0px 4px 0px;
+  border-color: #0000 #0000 var(--key-shadow-Grayish) #0000;
+}
+main > form > *:active{
+  filter: brightness(1.25);
+}
+main > form > [value="del"], main > form > [value="reset"]{
+  background-color: var(--key-background-desaturated);
+  border-color: #0000 #0000 var(--key-shadow-desaturated) #0000;
+  color: var(--text-white);
+  text-transform: uppercase;
+}
+main > form [value="reset"]{
+  grid-column: 2 span;
+}
+main > form [value="="]{
+  grid-column: 2 span;
+  background-color: var(--key-toggle-background);
+  border-color: #0000 #0000 var(--key-shadow-red) #0000;
+  color: var(--text-white);
+  text-transform: uppercase;
+}
