@@ -17,7 +17,7 @@
   --text-white: hsl(0, 0%, 100%) ;
 }
 *{
-  font-family: sans-serif;
+  font-family: "League Spartan",system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -39,8 +39,10 @@ body{
 main{
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 26px;
   width: 540px;
+  min-width: 340px;
+  margin: 20px;
 }
 /* main end */
 
@@ -65,7 +67,7 @@ main > div:first-child > section{
   row-gap: 8px;
   align-items: center;
 }
-main > div:first-child > section > h3{
+main > div:first-child > section > p{
   grid-area: title;
   font-size: 12px;
   font-weight: bold;
@@ -77,6 +79,8 @@ main > div:first-child > section > div{
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
+  font-size: 12px;
+  font-weight: bold;
 }
 main > div:first-child > section > input{
   grid-area: range;
@@ -94,9 +98,9 @@ main > div:first-child > section > input{
 main > div:last-of-type{
   background-color: var(--screen-background);
   color: var(--text-white);
-  padding: 46px;
-  font-size: 62px;
-  height: 164px;
+  padding: 34px;
+  height: 128px;
+  font-size: 52px;
   font-weight: bold;
   border-radius: 12px;
   text-align: right;
@@ -115,13 +119,18 @@ main > form{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: var(--toggle-background);
-  padding: 24px;
-  gap: 24px;
+  padding: 34px;
+  gap: 22px;
   border-radius: 12px;
-  font-size: 32px;
+  font-size: 38px;
+  font-weight: 700;
 }
 main > form > *{
-  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 0px;
   border-radius: 8px;
   font-weight: bold;
   color: var(--text-dark);
@@ -132,13 +141,14 @@ main > form > *{
   border-color: #0000 #0000 var(--key-shadow-Grayish) #0000;
 }
 main > form > *:active{
-  filter: brightness(1.25);
+  filter: brightness(1.5);
 }
 main > form > [value="del"], main > form > [value="reset"]{
   background-color: var(--key-background-desaturated);
   border-color: #0000 #0000 var(--key-shadow-desaturated) #0000;
   color: var(--text-white);
   text-transform: uppercase;
+  font-size: 28px;
 }
 main > form [value="reset"]{
   grid-column: 2 span;
@@ -149,4 +159,5 @@ main > form [value="="]{
   border-color: #0000 #0000 var(--key-shadow-red) #0000;
   color: var(--text-white);
   text-transform: uppercase;
+  font-size: 28px;
 }
