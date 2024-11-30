@@ -139,6 +139,7 @@ main > form > *{
   background-color: var(--key-background);
   border-width: 0px 0px 4px 0px;
   border-color: #0000 #0000 var(--key-shadow-Grayish) #0000;
+  height: 64px;
 }
 main > form > *:active{
   filter: brightness(1.5);
@@ -149,6 +150,7 @@ main > form > [value="del"], main > form > [value="reset"]{
   color: var(--text-white);
   text-transform: uppercase;
   font-size: 28px;
+  height: 64px;
 }
 main > form [value="reset"]{
   grid-column: 2 span;
@@ -160,4 +162,34 @@ main > form [value="="]{
   color: var(--text-white);
   text-transform: uppercase;
   font-size: 28px;
+  height: 64px;
+}
+
+@media only screen and (min-height: 600px){
+  main{
+    gap: 15px;
+  }
+  h1.header-heading-margin{
+    font-size: 28px;
+  }
+  main > div:last-of-type{
+    padding: 24px;
+    height: 104px;
+    font-size: 48px;
+  }
+  main > form{
+    padding: 24px;
+    gap: 18px;
+  }
+  /* main > form {
+    font-size: 28px;
+  }
+  main > form > *{
+    padding: 4px;
+    height: 46px;
+  } */
+  /* main > form [value="="], main > form > [value="del"], main > form > [value="reset"]{
+    font-size: 22px;
+    height: 46px;
+  } */
 }
