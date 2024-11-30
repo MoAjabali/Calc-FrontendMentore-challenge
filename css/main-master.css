@@ -16,47 +16,13 @@
   --text-dark: #454b59;
   --text-white: hsl(0, 0%, 100%) ;
 }
-/*:root{
-
-  --main-background: hsl(0, 0%, 90%);
-  --toggle-background: hsl(0, 5%, 81%);
-  --screen-background: hsl(0, 0%, 93%);
-
-  --key-background-desaturated: hsl(185, 42%, 37%);
-  --key-shadow-desaturated:  hsl(185, 58%, 25%);
-
-  --key-toggle-background: hsl(25, 98%, 40%);
-  --key-shadow-red: hsl(25, 99%, 27%);
-
-  --key-background: hsl(45, 7%, 89%);
-  --key-shadow-Grayish:  hsl(35, 11%, 61%);
-
-  --text-dark:  hsl(60, 10%, 19%);
-  --text-white: hsl(0, 0%, 100%);
-}*/
-/*:root{
-  --main-background:  hsl(268, 75%, 9%)
-  --toggle-background: hsl(268, 71%, 12%);
-
-  --key-background: hsl(281, 89%, 26%);
-  --key-shadow:   hsl(285, 91%, 52%);
-
-  --key-toggle-background: hsl(176, 100%, 44%);
-  --key-shadow: hsl(177, 92%, 70%);
-
-  --key-background:  hsl(268, 47%, 21%);
-  --key-shadow:  hsl(290, 70%, 36%);
-
-  --text-light-yellow:  hsl(52, 100%, 62%);
-  --text-dark:   hsl(198, 20%, 13%);
-  --text-white: hsl(0, 0%, 100%);
-}*/
 *{
   font-family: sans-serif;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   font-family: system-ui;
+  transition-duration: 200ms;
 }
 body{
   padding: 0px;
