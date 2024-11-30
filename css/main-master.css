@@ -164,7 +164,7 @@ main > form [value="="]{
   font-size: 28px;
   height: 64px;
 }
-
+/*
 @media only screen and (min-height: 600px){
   main{
     gap: 15px;
@@ -192,4 +192,4 @@ main > form [value="="]{
     font-size: 22px;
     height: 46px;
   } */
-}
+/*}*/
