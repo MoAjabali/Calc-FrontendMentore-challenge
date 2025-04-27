@@ -20,7 +20,7 @@
 ## Overview
 
 ### Quick Introduction
-This project is a simple calculator. The user enters the operation, and the app calculates their operation and give output. It includes input validation. Click [here](https://mohammed-aljablai.github.io/LifeClock/) to visit the website 😊.
+This project is a simple calculator. The user enters the operation, and the app calculates their operation and give output. It includes input validation. Click [here](https://MoAjabali.github.io/LifeClock/) to visit the website 😊.
 **Note:** 
 - The website still incomplete.
 - This is a solution to the [Calculator App Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/).
@@ -34,7 +34,7 @@ This project is a simple calculator. The user enters the operation, and the app 
 > - **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
 ### What I Implemented
-I still did not complete this website yet i will -In Sha Allah-.
+I did the Challenge as it asked for me
 
 ### Screenshots
 #### Original Design
@@ -48,4 +48,4 @@ I still did not complete this website yet i will -In Sha Allah-.
 
 
 ## Author
-- Me 😎 ([@mohammed-Aljablai](https://github.com/mohammed-aljablai))
+- Me 😎 ([@mohammed-Aljabali](https://github.com/MoAjabali))
